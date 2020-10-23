@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+        <!-- Additional CSS must be placed after Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>GRELAZ</title>
+
+    </head>
+
+    <body>
+        <header class="jumbotron jumbotron-fluid bg-dark text-light mb-0 pt-4 pb-3">
+            <div class="container-fluid">
+                <div class="row">
+                    
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <h1>GRELAZ <i class="fa fa-car"></i></h1>
+                        <h4>Complete Auto Repair</h4>
+                    </div>
+                    <div class="col text-right jumbo-contact">
+                        <a class="d-none d-sm-block text-light" href="https://www.google.com/maps/place/Grelaz+Complete+Auto+Repair/@32.6444045,-117.0961912,17z/data=!3m1!4b1!4m5!3m4!1s0x80d94df7ab642735:0x4977dc3d198fb040!8m2!3d32.6444045!4d-117.0940025" target="_blank"><i class="fa fa-location-arrow"> </i> 107 Broadway Suite A <br>
+                        Chula Vista, CA 91910</a>
+                        <a class="d-none d-sm-block text-light" href="tel:+16198277477"><i class="fa fa-phone"> </i> 1-619-827-7477</a>
+                    </div>
+                </div> 
+            </div> 
+        </header>
+
+    <!-- Navbar -->
+    
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top m-0">
+            <div class="container-fluid m-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#">Reviews</a>
+                        <a class="nav-link" href="#">Track Your Repair</a>
+                    </div>
+                </div>
+                <div class="navbar-nav">
+                    <a role="button" class="btn btn-success btn-sm text-light" data-toggle="modal" data-target="#appointmentModal">Schedule Appointment</a>
+                </div>
+            </div>
+          </nav>
+        
+    <!-- Banner image with scripture -->
+
+        <div class="container-fluid">
+            <div class="row banner">
+                <div class="col pt-4 text-center">
+                    <h1>PROVERBS 3:5-6</h1>
+                    <p>5 Trust in the Lord with all your heart
+                        and lean not on your own understanding;
+                    6 in all your ways submit to him,
+                        and he will make your paths straight.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-dark text-light">
+            <div class="row align-self-center">
+                <div class="col-6 pt-5 pb-5">
+                    <h1>GRELAZ SPECIAL</h1>
+                </div>
+                <div class="col-6 pt-5 pb-5 bg-success">
+                    <h1>OUR CUSTOMER REVIEWS</h1>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Schedule an appointment Modal -->
+        <div id="appointmentModal" class="modal shadow-lg p-3 mb-5 rounded" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-success text-light">
+                        <h3 class="modal-title">Schedule an appointment</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label class="sr-only" for="name"></label>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="name" placeholder="Name" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="sr-only" for="date"></label>
+                                    <div class="col">
+                                        <input class="form-control" type="date" id="date" name="date" placeholder="Appointment Date" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="sr-only" for="year"></label>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="year" placeholder="Year" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="sr-only" for="make"></label>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="make" placeholder="Make" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="sr-only" for="model"></label>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="model" placeholder="Model" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="sr-only" for="serviceRequest"></label>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="serviceRequest" placeholder="Service Request" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col form-group">
+                                        <button class="btn btn-secondary" type="button" class="close" data-dismiss="modal">Cancel</button>
+                                        <button class="btn btn-primary" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="bg-dark text-light">
+            <div class="container text-center">
+                <div class="row pt-4">
+                    <div class="col-12">
+                        <p class="mb-0">&copy;GRELAZ 2003</p>
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col">
+                        <a class="text-light" role="button" href="https://www.google.com/maps/place/Grelaz+Complete+Auto+Repair/@32.6444045,-117.0961912,17z/data=!3m1!4b1!4m5!3m4!1s0x80d94df7ab642735:0x4977dc3d198fb040!8m2!3d32.6444045!4d-117.0940025" target="_blank"><i class="fa fa-location-arrow"> </i> 107 Broadway Suite A <br>
+                        Chula Vista, CA 91910</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col pb-4">
+                        <a class="text-light" role="button" href="tel:+16198277477"><i class="fa fa-phone"> </i> 1-619-827-7477</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    font-family: "Open Sans", sans-serif;   
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.jumbotron {
+    margin-top: 55px;
+}
+
+.jumbo-contact a {
+    font-size: x-small;
+    margin: 0;
+}
+
+.banner {
+    background-image: linear-gradient(to top, rgba(245, 246, 252, 0.3), rgba(34, 189, 85, 0.5) 50%),
+    url('/img/Mercedes.jpg');
+    /* width: 100%; */
+    background-position: center;
+    height: 600px;
+    background-size: cover;
+    color: white;
+}
+
